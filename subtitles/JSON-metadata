@@ -1,0 +1,565 @@
+// inside body (class="talks-body") script (data-spec="q"), get second param of the function q()
+// language code seems to be ISO 639-2 Code
+{
+    "__INITIAL_DATA__": {
+        "requested_language_english_name": "Albanian",
+        "current_talk": "66401",
+        "description": "Kur jeni në anët e kundërta të një çështjeje, si bieni dakort me kundërshtarët tuaj dhe punoni së bashku për të zgjidhur një problem? Ndiqni se si aktivistja për të drejtat e kafshëve Leah Garcés tregon tre mësime që ajo mësoi në çeljen e një plani ambicioz për t'i dhënë fund fabrikave të pulave me personin e fundit që priste: një fermer pulash.",
+        "event": "TEDxSeattle",
+        "language": "sq",
+        "language_swap": false,
+        "name": "Leah Garcés: Një mësim si të kthejmë kundërshtarët në aleatë",
+        "slug": "leah_garces_a_lesson_in_turning_adversaries_into_allies",
+        "series_slug": null,
+        "speakers": [{
+            "id": "6097",
+            "slug": "leah_garces",
+            "is_published": true,
+            "firstname": "Leah",
+            "lastname": "Garcés",
+            "middleinitial": "",
+            "title": "",
+            "description": "Animal rights activist",
+            "photo_url": "https://pe.tedcdn.com/images/ted/2204e9a054b1526daafd5bb218bb3d80b760261c_254x191.jpg",
+            "whatotherssay": "",
+            "whotheyare": "Leah Garces fights to end animal exploitation.",
+            "whylisten": "<p>Leah Garc&eacute;s is the president of Mercy For Animals, an international nonprofit dedicated to ending the exploitation of animals for food and constructing a compassionate food system. Active in the United States, Mexico, Brazil and India, the organization has conducted more than 80 investigations of factory farms and slaughterhouses, moved more than 300 food companies to adopt animal welfare policies and helped pass historic legislation to ban cages for farmed animals.</p><p>Garc&eacute;s is the author of&nbsp;<a href=\"https://geni.us/Xshp516\" target=\"_blank\"><em>Grilled: Turning Adversaries into Allies to Change the Chicken Industry</em></a>. She has nearly 20 years of leadership experience in the animal protection movement and has partnered with some of the world&#39;s largest food companies on her mission to end factory farming and build a compassionate food system.<br />&nbsp;<br />Garc&eacute;s&nbsp;oversaw international campaigns in 14 countries at the World Society for the Protection of Animals and launched Compassion in World Farming in the United States. Her work has been featured in many national and international media outlets, including the <em>New York Times</em>, the <em>Washington Post</em>, <em>BuzzFeed</em>, <em>Vox</em>, <em>VICE magazine</em>&nbsp;and the <em>Chicago Tribune</em>. She is a contributing author for <em>Food Safety News</em> and serves as an advisor to Encompass and Seattle Food Tech.</p>"
+        }],
+        "url": "https://www.ted.com/talks/leah_garces_a_lesson_in_turning_adversaries_into_allies",
+        "viewed_count": 1385921,
+        "talks": [{
+            "recommendations": {
+                "status": "approved",
+                "headline": "Leah Garcés recommends",
+                "blurb": "More resources curated by Leah Garcés",
+                "start_at": null,
+                "end_at": null,
+                "published": true,
+                "eyebrow": "",
+                "type": "recommendation",
+                "rec_lists": [{
+                    "title": "",
+                    "description": "",
+                    "rec_items": [{
+                            "label": "READ_Book",
+                            "headline": "*Walking With the Wind: A Memoir of the Movement*",
+                            "blurb": "John Lewis was my representative in congress, and he greatly influenced my philosophy about how we should approach social justice work, especially with regard to collaborating with those who hate or resist our efforts. He writes: \"Hold only love, only peace in your heart, knowing that the battle of good to overcome evil is already won. Choose confrontation wisely, but when it is your time don't be afraid to stand up, speak up, and speak out against injustice.\"",
+                            "note": "John Lewis and Mike D'Orso\r\nHarvest Books, 1999",
+                            "link_url": "https://www.amazon.com/Walking-Wind-Movement-John-Lewis/dp/0156007088/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0520271440&linkCode=as2&tag=teco06-20",
+                            "position": null,
+                            "is_pdf": false,
+                            "eyebrow": ""
+                        },
+                        {
+                            "label": "READ_Book",
+                            "headline": "*Big Chicken: The Incredible Story of How Antibiotics Created Modern Agriculture and Changed the Way the World Eats*",
+                            "blurb": "Maryn McKenna's work to expose the dirty underside of our food system has inspired me at many moments along my journey to do the same. This book is about so much more than chickens -- it's an exploration of how corporate powers wield the food industry as a weapon against public health and the environment.",
+                            "note": "Maryn McKenna\r\nNational Geographic, 2017",
+                            "link_url": "https://www.amazon.com/Big-Chicken-Incredible-Antibiotics-Agriculture/dp/1426217668/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0520271440&linkCode=as2&tag=teco06-20",
+                            "position": null,
+                            "is_pdf": false,
+                            "eyebrow": ""
+                        },
+                        {
+                            "label": "READ_Book",
+                            "headline": "*Eating Animals*",
+                            "blurb": "Few writers have as eloquently explored the ethical, environmental and societal dilemmas our species faces as we reckon with our consumption of other animals. This book is an enjoyable read and a great place to start for those interested in learning more about how to act and eat more ethically.",
+                            "note": "Jonathan Safran Foer\r\nBack Bay Books, 2010",
+                            "link_url": "https://www.amazon.com/Eating-Animals-Jonathan-Safran-Foer/dp/0316069884/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0520271440&linkCode=as2&tag=teco06-20",
+                            "position": null,
+                            "is_pdf": false,
+                            "eyebrow": ""
+                        },
+                        {
+                            "label": "READ_Book",
+                            "headline": "*Are We Smart Enough to Know How Smart Animals Are?*",
+                            "blurb": "Ever since I was a child observing resident ducks in my backyard in central Florida, I've been fascinated by the inner lives of animals. Their minds are, as De Waal so expertly illustrates, so much more complex than we humans can grasp. This book changed the way I see our fellow creatures and inspires me to consider them, always, as the thinking, feeling beings they are.",
+                            "note": "Frans De Waal\r\nW. W. Norton & Company, 2017",
+                            "link_url": "https://www.amazon.com/Are-Smart-Enough-Know-Animals/dp/0393353664/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0520271440&linkCode=as2&tag=teco06-20",
+                            "position": null,
+                            "is_pdf": false,
+                            "eyebrow": ""
+                        },
+                        {
+                            "label": "READ_Book",
+                            "headline": "*Farmageddon: The True Cost of Cheap Meat*",
+                            "blurb": "Philip Lymbery is a longtime mentor of mine, and reading his book about our food system's many failures inspired me consider the period of ecosystem collapse we are in and how it's specifically related to our food system. ",
+                            "note": "Philip Lymbery\r\nBloomsbury, 2014",
+                            "link_url": "https://www.amazon.com/Farmageddon-True-Cost-Cheap-Meat/dp/1408846446/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0520271440&linkCode=as2&tag=teco06-20",
+                            "position": null,
+                            "is_pdf": false,
+                            "eyebrow": ""
+                        },
+                        {
+                            "label": "READ_Article",
+                            "headline": "\"Letter from Birmingham Jail\"",
+                            "blurb": "Like many social justice advocates, I am deeply inspired by the writing of Martin Luther King Jr., especially this letter. His framing of the ways in which we must engage with our so-called enemies is a foundation for my work to partner with those with whom I disagree.",
+                            "note": "Martin Luther King Jr.\r\n1963",
+                            "link_url": "https://kinginstitute.stanford.edu/king-papers/documents/letter-birmingham-jail",
+                            "position": null,
+                            "is_pdf": false,
+                            "eyebrow": ""
+                        }
+                    ]
+                }]
+            },
+            "more_resources": [{
+                "status": "approved",
+                "headline": "*Grilled: Turning Adversaries into Allies to Change the Chicken Industry*",
+                "blurb": null,
+                "link_url": "https://www.amazon.com/Grilled-Turning-Adversaries-Chicken-Industry/dp/1472962583/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0520271440&linkCode=as2&tag=teco06-20",
+                "image_url": "https://pe.tedcdn.com/images/ted/913f9f2553abd0ed48dab3da4887925a3cc20ccc_1594x2551.jpg",
+                "author": "Leah Garcés",
+                "year": "2019",
+                "publisher": "Bloomsbury Sigma",
+                "start_at": null,
+                "end_at": null,
+                "published": true,
+                "eyebrow": "BOOK",
+                "type": "book"
+            }],
+            "corrections": [],
+            "has_citations": true,
+            "take_action": [{
+                    "status": "approved",
+                    "blurb": "**Donate** to Mercy For Animals to help build a compassionate food system.",
+                    "link_url": "https://give.mercyforanimals.org/page/13626/donate/1?ea.tracking.id=19WC05DA",
+                    "visible_url": "give.mercyforanimals.org",
+                    "start_at": null,
+                    "end_at": null,
+                    "published": true,
+                    "eyebrow": null,
+                    "type": "take_action",
+                    "verb": "participate"
+                },
+                {
+                    "status": "approved",
+                    "blurb": "**Learn** about \"Transfarmation,\" a project from Mercy For Animals.",
+                    "link_url": "https://thetransfarmationproject.org/",
+                    "visible_url": "thetransfarmationproject.org",
+                    "start_at": null,
+                    "end_at": null,
+                    "published": true,
+                    "eyebrow": null,
+                    "type": "take_action",
+                    "verb": "learn"
+                }
+            ],
+            "explore_cta_experiment": {},
+            "curator_approved": true,
+            "description": "Kur jeni në anët e kundërta të një çështjeje, si bieni dakort me kundërshtarët tuaj dhe punoni së bashku për të zgjidhur një problem? Ndiqni se si aktivistja për të drejtat e kafshëve Leah Garcés tregon tre mësime që ajo mësoi në çeljen e një plani ambicioz për t'i dhënë fund fabrikave të pulave me personin e fundit që priste: një fermer pulash.",
+            "downloads": {
+                "id": 66401,
+                "languages": [{
+                        "languageName": "English",
+                        "endonym": "English",
+                        "languageCode": "en",
+                        "ianaCode": "en",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Portuguese, Brazilian",
+                        "endonym": "Português brasileiro",
+                        "languageCode": "pt-br",
+                        "ianaCode": "pt-BR",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Kurdish",
+                        "endonym": "کوردی",
+                        "languageCode": "ku",
+                        "ianaCode": "ku",
+                        "isRtl": true
+                    },
+                    {
+                        "languageName": "Kurdish (Central)",
+                        "endonym": "کوردی سۆرانی",
+                        "languageCode": "ckb",
+                        "ianaCode": "ku-ckb",
+                        "isRtl": true
+                    },
+                    {
+                        "languageName": "Chinese, Traditional",
+                        "endonym": "中文 (繁體)",
+                        "languageCode": "zh-tw",
+                        "ianaCode": "zh-Hant",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Portuguese",
+                        "endonym": "Português de Portugal",
+                        "languageCode": "pt",
+                        "ianaCode": "pt",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "French",
+                        "endonym": "Français",
+                        "languageCode": "fr",
+                        "ianaCode": "fr",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Spanish",
+                        "endonym": "Español",
+                        "languageCode": "es",
+                        "ianaCode": "es",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Arabic",
+                        "endonym": "العربية",
+                        "languageCode": "ar",
+                        "ianaCode": "ar",
+                        "isRtl": true
+                    },
+                    {
+                        "languageName": "Hungarian",
+                        "endonym": "Magyar",
+                        "languageCode": "hu",
+                        "ianaCode": "hu",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Japanese",
+                        "endonym": "日本語",
+                        "languageCode": "ja",
+                        "ianaCode": "ja",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Italian",
+                        "endonym": "Italiano",
+                        "languageCode": "it",
+                        "ianaCode": "it",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Chinese, Simplified",
+                        "endonym": "中文 (简体)",
+                        "languageCode": "zh-cn",
+                        "ianaCode": "zh-Hans",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Albanian",
+                        "endonym": "Shqip",
+                        "languageCode": "sq",
+                        "ianaCode": "sq",
+                        "isRtl": false
+                    }
+                ],
+                "nativeDownloads": {
+                    "low": "https://download.ted.com/talks/LeahGarces_2019X-light.mp4?apikey=acme-roadrunner",
+                    "medium": "https://download.ted.com/talks/LeahGarces_2019X.mp4?apikey=acme-roadrunner",
+                    "high": "https://download.ted.com/talks/LeahGarces_2019X-480p.mp4?apikey=acme-roadrunner"
+                },
+                "subtitledDownloads": {
+                    "en": {
+                        "name": "English",
+                        "low": "https://download.ted.com/talks/LeahGarces_2019X-low-en.mp4?apikey=acme-roadrunner",
+                        "high": "https://download.ted.com/talks/LeahGarces_2019X-480p-en.mp4?apikey=acme-roadrunner"
+                    },
+                    "pt-br": {
+                        "name": "Portuguese, Brazilian",
+                        "low": "https://download.ted.com/talks/LeahGarces_2019X-low-pt-br.mp4?apikey=acme-roadrunner",
+                        "high": "https://download.ted.com/talks/LeahGarces_2019X-480p-pt-br.mp4?apikey=acme-roadrunner"
+                    },
+                    "zh-tw": {
+                        "name": "Chinese, Traditional",
+                        "low": "https://download.ted.com/talks/LeahGarces_2019X-low-zh-tw.mp4?apikey=acme-roadrunner",
+                        "high": "https://download.ted.com/talks/LeahGarces_2019X-480p-zh-tw.mp4?apikey=acme-roadrunner"
+                    },
+                    "pt": {
+                        "name": "Portuguese",
+                        "low": "https://download.ted.com/talks/LeahGarces_2019X-low-pt.mp4?apikey=acme-roadrunner",
+                        "high": "https://download.ted.com/talks/LeahGarces_2019X-480p-pt.mp4?apikey=acme-roadrunner"
+                    },
+                    "fr": {
+                        "name": "French",
+                        "low": "https://download.ted.com/talks/LeahGarces_2019X-low-fr.mp4?apikey=acme-roadrunner",
+                        "high": "https://download.ted.com/talks/LeahGarces_2019X-480p-fr.mp4?apikey=acme-roadrunner"
+                    },
+                    "es": {
+                        "name": "Spanish",
+                        "low": "https://download.ted.com/talks/LeahGarces_2019X-low-es.mp4?apikey=acme-roadrunner",
+                        "high": "https://download.ted.com/talks/LeahGarces_2019X-480p-es.mp4?apikey=acme-roadrunner"
+                    },
+                    "ar": {
+                        "name": "Arabic",
+                        "low": "https://download.ted.com/talks/LeahGarces_2019X-low-ar.mp4?apikey=acme-roadrunner",
+                        "high": "https://download.ted.com/talks/LeahGarces_2019X-480p-ar.mp4?apikey=acme-roadrunner"
+                    },
+                    "hu": {
+                        "name": "Hungarian",
+                        "low": "https://download.ted.com/talks/LeahGarces_2019X-low-hu.mp4?apikey=acme-roadrunner",
+                        "high": "https://download.ted.com/talks/LeahGarces_2019X-480p-hu.mp4?apikey=acme-roadrunner"
+                    },
+                    "ja": {
+                        "name": "Japanese",
+                        "low": "https://download.ted.com/talks/LeahGarces_2019X-low-ja.mp4?apikey=acme-roadrunner",
+                        "high": "https://download.ted.com/talks/LeahGarces_2019X-480p-ja.mp4?apikey=acme-roadrunner"
+                    },
+                    "it": {
+                        "name": "Italian",
+                        "low": "https://download.ted.com/talks/LeahGarces_2019X-low-it.mp4?apikey=acme-roadrunner",
+                        "high": "https://download.ted.com/talks/LeahGarces_2019X-480p-it.mp4?apikey=acme-roadrunner"
+                    },
+                    "zh-cn": {
+                        "name": "Chinese, Simplified",
+                        "low": "https://download.ted.com/talks/LeahGarces_2019X-low-zh-cn.mp4?apikey=acme-roadrunner",
+                        "high": "https://download.ted.com/talks/LeahGarces_2019X-480p-zh-cn.mp4?apikey=acme-roadrunner"
+                    },
+                    "sq": {
+                        "name": "Albanian",
+                        "low": "https://download.ted.com/talks/LeahGarces_2019X-low-sq.mp4?apikey=acme-roadrunner",
+                        "high": "https://download.ted.com/talks/LeahGarces_2019X-480p-sq.mp4?apikey=acme-roadrunner"
+                    }
+                },
+                "audioDownload": "https://download.ted.com/talks/LeahGarces_2019X.mp3?apikey=acme-roadrunner"
+            },
+            "duration": 813,
+            "event": "TEDxSeattle",
+            "institute_partner_name": null,
+            "salon_partner_name": null,
+            "event_badge": null,
+            "is_featured": true,
+            "hero": "https://s3.amazonaws.com/talkstar-photos/uploads/6a5085c4-15e3-4b8e-ac5a-7f9a79e64883/LeahGarces_2019X-embed.jpg",
+            "hero_load": "https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/6a5085c4-15e3-4b8e-ac5a-7f9a79e64883/LeahGarces_2019X-embed.jpg?q=50&w=15",
+            "id": "66401",
+            "player_talks": [{
+                "id": "66401",
+                "mediaIdentifier": "LeahGarces_2019X",
+                "mediaProjectVersionIdentifier": null,
+                "duration": 813,
+                "languages": [{
+                        "languageName": "English",
+                        "endonym": "English",
+                        "languageCode": "en",
+                        "ianaCode": "en",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Portuguese, Brazilian",
+                        "endonym": "Português brasileiro",
+                        "languageCode": "pt-br",
+                        "ianaCode": "pt-BR",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Kurdish",
+                        "endonym": "کوردی",
+                        "languageCode": "ku",
+                        "ianaCode": "ku",
+                        "isRtl": true
+                    },
+                    {
+                        "languageName": "Kurdish (Central)",
+                        "endonym": "کوردی سۆرانی",
+                        "languageCode": "ckb",
+                        "ianaCode": "ku-ckb",
+                        "isRtl": true
+                    },
+                    {
+                        "languageName": "Chinese, Traditional",
+                        "endonym": "中文 (繁體)",
+                        "languageCode": "zh-tw",
+                        "ianaCode": "zh-Hant",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Portuguese",
+                        "endonym": "Português de Portugal",
+                        "languageCode": "pt",
+                        "ianaCode": "pt",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "French",
+                        "endonym": "Français",
+                        "languageCode": "fr",
+                        "ianaCode": "fr",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Spanish",
+                        "endonym": "Español",
+                        "languageCode": "es",
+                        "ianaCode": "es",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Arabic",
+                        "endonym": "العربية",
+                        "languageCode": "ar",
+                        "ianaCode": "ar",
+                        "isRtl": true
+                    },
+                    {
+                        "languageName": "Hungarian",
+                        "endonym": "Magyar",
+                        "languageCode": "hu",
+                        "ianaCode": "hu",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Japanese",
+                        "endonym": "日本語",
+                        "languageCode": "ja",
+                        "ianaCode": "ja",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Italian",
+                        "endonym": "Italiano",
+                        "languageCode": "it",
+                        "ianaCode": "it",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Chinese, Simplified",
+                        "endonym": "中文 (简体)",
+                        "languageCode": "zh-cn",
+                        "ianaCode": "zh-Hans",
+                        "isRtl": false
+                    },
+                    {
+                        "languageName": "Albanian",
+                        "endonym": "Shqip",
+                        "languageCode": "sq",
+                        "ianaCode": "sq",
+                        "isRtl": false
+                    }
+                ],
+                "nativeLanguage": "en",
+                "isSubtitleRequired": false,
+                "introDuration": 11.82,
+                "adDuration": 3.33,
+                "postAdDuration": 0.83,
+                "resources": {
+                    "h264": [{
+                        "bitrate": 180,
+                        "file": "https://pc.tedcdn.com/talk/stream/2019X/Blank/LeahGarces_2019X-180k.mp4?dnt"
+                    }],
+                    "hls": {
+                        "adUrl": "https://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250%2C512x288%2C120x60%2C320x50%2C6x7%2C6x8&correlator=%5Bcorrelator%5D&cust_params=event%3DTEDxSeattle%26id%3D66401%26tag%3Dfood%2CTEDx%2Cactivism%2Canimals%26talk%3Dleah_garces_a_lesson_in_turning_adversaries_into_allies%26year%3D2019&env=vp&gdfp_req=1&impl=s&iu=%2F5641%2Fmobile%2Fios%2Fweb&output=xml_vast2&sz=640x360&unviewed_position_start=1&url=%5Breferrer%5D",
+                        "maiTargeting": {
+                            "id": "66401",
+                            "talk": "leah_garces_a_lesson_in_turning_adversaries_into_allies",
+                            "tag": "food,TEDx,activism,animals",
+                            "year": "2019",
+                            "event": "TEDxSeattle"
+                        },
+                        "stream": "https://hls.ted.com/talks/66401.m3u8?preroll=newshortintro_053119",
+                        "metadata": "https://hls.ted.com/talks/66401.json?preroll=newshortintro_053119"
+                    }
+                },
+                "targeting": {
+                    "id": "66401",
+                    "talk": "leah_garces_a_lesson_in_turning_adversaries_into_allies",
+                    "tag": "food,TEDx,activism,animals",
+                    "year": "2019",
+                    "event": "TEDxSeattle"
+                },
+                "canonical": "https://www.ted.com/talks/leah_garces_a_lesson_in_turning_adversaries_into_allies",
+                "name": "Leah Garcés: Një mësim si të kthejmë kundërshtarët në aleatë",
+                "title": "Një mësim si të kthejmë kundërshtarët në aleatë",
+                "speaker": "Leah Garcés",
+                "thumb": "https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/6a5085c4-15e3-4b8e-ac5a-7f9a79e64883/LeahGarces_2019X-embed.jpg?quality=89&w=600",
+                "slug": "leah_garces_a_lesson_in_turning_adversaries_into_allies",
+                "event": "TEDxSeattle",
+                "published": 1599748195,
+                "external": {
+                    "service": "YouTube",
+                    "code": "kmIZeEu-3CY",
+                    "duration": 0,
+                    "start_time": 0
+                }
+            }],
+            "recorded_at": "2019-11-23T00:00:00.000+00:00",
+            "related_talks": [{
+                    "id": "2373",
+                    "hero": "https://s3.amazonaws.com/talkstar-photos/uploads/7add6dce-f7d5-4d82-a449-385e979cf41b/CarlSafina_2015Z-embed.jpg",
+                    "speaker": "Carl Safina",
+                    "title": "What are animals thinking and feeling?",
+                    "duration": 1166,
+                    "slug": "carl_safina_what_are_animals_thinking_and_feeling",
+                    "viewed_count": 2443912
+                },
+                {
+                    "id": "15290",
+                    "hero": "https://s3.amazonaws.com/talkstar-photos/uploads/68518094-5e90-479d-a1f4-c0d0eb0e77c1/FransdeWaal_2017P-embed.jpg",
+                    "speaker": "Frans de Waal",
+                    "title": "The surprising science of alpha males",
+                    "duration": 954,
+                    "slug": "frans_de_waal_the_surprising_science_of_alpha_males",
+                    "viewed_count": 3428844
+                },
+                {
+                    "id": "63815",
+                    "hero": "https://s3.amazonaws.com/talkstar-photos/uploads/f974ab71-e7ea-4c01-aabe-fdb6c1de6b4a/JaneGoodall_2020-embed.jpg",
+                    "speaker": "Jane Goodall",
+                    "title": "Every day you live, you impact the planet",
+                    "duration": 1514,
+                    "slug": "jane_goodall_every_day_you_live_you_impact_the_planet",
+                    "viewed_count": 1636296
+                },
+                {
+                    "id": "25339",
+                    "hero": "https://s3.amazonaws.com/talkstar-photos/uploads/db15e3f6-d3df-42ce-9c53-b1673add234d/chicken_textless2.jpg",
+                    "speaker": "Chris A. Kniesly",
+                    "title": "History through the eyes of a chicken",
+                    "duration": 307,
+                    "slug": "chris_a_kniesly_history_through_the_eyes_of_a_chicken",
+                    "viewed_count": 2876382
+                },
+                {
+                    "id": "64443",
+                    "hero": "https://s3.amazonaws.com/talkstar-photos/uploads/c6b8d3f8-939f-4235-bfd7-5fff614c10f3/ErinBaumgartner_2019X-embed.jpg",
+                    "speaker": "Erin Baumgartner",
+                    "title": "Big data, small farms and a tale of two tomatoes",
+                    "duration": 921,
+                    "slug": "erin_baumgartner_big_data_small_farms_and_a_tale_of_two_tomatoes",
+                    "viewed_count": 1471317
+                },
+                {
+                    "id": "51698",
+                    "hero": "https://s3.amazonaws.com/talkstar-photos/uploads/c4013120-9bea-43ed-943e-7335e19e5399/BobLangert_2019T-embed.jpg",
+                    "speaker": "Bob Langert",
+                    "title": "The business case for working with your toughest critics",
+                    "duration": 900,
+                    "slug": "bob_langert_the_business_case_for_working_with_your_toughest_critics",
+                    "viewed_count": 1511252
+                }
+            ],
+            "slug": "leah_garces_a_lesson_in_turning_adversaries_into_allies",
+            "speakers": [{
+                "id": "6097",
+                "slug": "leah_garces",
+                "is_published": true,
+                "firstname": "Leah",
+                "lastname": "Garcés",
+                "middleinitial": "",
+                "title": "",
+                "description": "Animal rights activist",
+                "photo_url": "https://pe.tedcdn.com/images/ted/2204e9a054b1526daafd5bb218bb3d80b760261c_254x191.jpg",
+                "whatotherssay": "",
+                "whotheyare": "Leah Garces fights to end animal exploitation.",
+                "whylisten": "<p>Leah Garc&eacute;s is the president of Mercy For Animals, an international nonprofit dedicated to ending the exploitation of animals for food and constructing a compassionate food system. Active in the United States, Mexico, Brazil and India, the organization has conducted more than 80 investigations of factory farms and slaughterhouses, moved more than 300 food companies to adopt animal welfare policies and helped pass historic legislation to ban cages for farmed animals.</p><p>Garc&eacute;s is the author of&nbsp;<a href=\"https://geni.us/Xshp516\" target=\"_blank\"><em>Grilled: Turning Adversaries into Allies to Change the Chicken Industry</em></a>. She has nearly 20 years of leadership experience in the animal protection movement and has partnered with some of the world&#39;s largest food companies on her mission to end factory farming and build a compassionate food system.<br />&nbsp;<br />Garc&eacute;s&nbsp;oversaw international campaigns in 14 countries at the World Society for the Protection of Animals and launched Compassion in World Farming in the United States. Her work has been featured in many national and international media outlets, including the <em>New York Times</em>, the <em>Washington Post</em>, <em>BuzzFeed</em>, <em>Vox</em>, <em>VICE magazine</em>&nbsp;and the <em>Chicago Tribune</em>. She is a contributing author for <em>Food Safety News</em> and serves as an advisor to Encompass and Seattle Food Tech.</p>"
+            }],
+            "speaker_name": "Leah Garcés",
+            "tags": [
+                "food",
+                "TEDx",
+                "activism",
+                "animals"
+            ],
+            "title": "Një mësim si të kthejmë kundërshtarët në aleatë",
+            "video_type": {
+                "id": "2",
+                "name": "TEDx Talk"
+            },
+            "viewed_count": 1385921
+        }]
+    }
+}
