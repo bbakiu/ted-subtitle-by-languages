@@ -1,0 +1,544 @@
+<div class="main talks-main" role="main">
+    <script>
+        __ga("set", "dimension2", "64443");
+    </script>
+
+    <div itemscope itemtype="https://schema.org/VideoObject">
+        <link href="https://www.ted.com/talks/erin_baumgartner_big_data_small_farms_and_a_tale_of_two_tomatoes" itemprop="url" />
+        <meta content="Big data, small farms and a tale of two tomatoes" itemprop="name" />
+        <meta content="The path to better food is paved with data, says entrepreneur Erin Baumgartner. Drawing from her experience running a farm-to-table business, she outlines her plan to help create a healthier, zero-waste food system that values the quality and taste of small, local farm harvests over factory-farmed produce."
+            itemprop="description" />
+        <meta content="PT15M21S" itemprop="duration" />
+        <meta content="2020-08-20T15:25:41+00:00" itemprop="uploadDate" />
+        <meta content="1471425" itemprop="interactionCount" />
+        <link content="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/c6b8d3f8-939f-4235-bfd7-5fff614c10f3/ErinBaumgartner_2019X-embed.jpg?quality=95&amp;w=480" itemprop="thumbnailUrl" />
+        <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <link href="/speakers/erin_baumgartner" itemprop="url" />
+      <meta content="Erin Baumgartner" itemprop="name" />
+      <link href="https://pe.tedcdn.com/images/ted/3113a01c69d2c59780b2262be4739527dadcc7c6_254x191.jpg" itemprop="image" />
+    </span>
+        <link href="https://embed.ted.com/talks/erin_baumgartner_big_data_small_farms_and_a_tale_of_two_tomatoes" itemprop="embedUrl" />
+        <meta content="Flash HTML5" itemprop="playerType" />
+        <meta content="640" itemprop="width" />
+        <meta content="360" itemprop="height" />
+        <link href="https://creativecommons.org/licenses/by-nc-nd/4.0/" itemprop="license" />
+
+        <div data-talk-page>
+            <div class="bg:gray-ll">
+                <div class="m-x:a pos:r p-t:5@xxl" style="max-width: 106.25rem;">
+                    <div class="Grid">
+                        <!-- Main column -->
+                        <div class="Grid__cell bg:white w:2of3@md">
+                            <!-- Video placeholder -->
+                            <div class="bg:black w:full pos:r" style="
+                  padding-bottom: 56.25%;
+                  background-image: url(https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/c6b8d3f8-939f-4235-bfd7-5fff614c10f3/ErinBaumgartner_2019X-embed.jpg?q=50&amp;w=15);
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                ">
+                                <div class="pos:a Spinner" style="top: 50%; left: 50%; margin-top: -50px; margin-left: -50px; width: 100px; height: 100px;"></div>
+                                <!-- Talk meta -->
+                                <div class="pos:a bottom:6">
+                                    <div class="p:1 p-x:4 t-a:l">
+                                        <div class="d:n f:.8 f:1@md m-b:.5 t-t:u c:white">
+                                            Erin Baumgartner
+                                        </div>
+                                        <div class="d:n f-w:700 f:.9 f:1@xxl c:white">
+                                            <span>
+                        1,471,425
+                        <span className="f-w:400"> views</span>
+                                            </span>
+                                            <span> • 15:21</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- About the talk -->
+                            <div class="p:2 p-t:4@md min-h:100vh"></div>
+                        </div>
+
+                        <!-- Sidebar -->
+                        <div class="Grid__cell w:1of3@md"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script data-spec="q">
+        q("talkPage.init", {
+            el: "[data-talk-page]",
+            __INITIAL_DATA__: {
+                requested_language_english_name: "English",
+                current_talk: "64443",
+                description: "The path to better food is paved with data, says entrepreneur Erin Baumgartner. Drawing from her experience running a farm-to-table business, she outlines her plan to help create a healthier, zero-waste food system that values the quality and taste of small, local farm harvests over factory-farmed produce.",
+                event: "TEDxNatick",
+                language: "en",
+                language_swap: false,
+                name: "Erin Baumgartner: Big data, small farms and a tale of two tomatoes",
+                slug: "erin_baumgartner_big_data_small_farms_and_a_tale_of_two_tomatoes",
+                series_slug: null,
+                speakers: [{
+                    id: "6064",
+                    slug: "erin_baumgartner",
+                    is_published: true,
+                    firstname: "Erin",
+                    lastname: "Baumgartner",
+                    middleinitial: "",
+                    title: "",
+                    description: "Entrepreneur",
+                    photo_url: "https://pe.tedcdn.com/images/ted/3113a01c69d2c59780b2262be4739527dadcc7c6_254x191.jpg",
+                    whatotherssay: "",
+                    whotheyare: "Erin Baumgartner thinks about ways to use technology to shorten and simplify the complex system of the food supply chain.",
+                    whylisten: "<p>Erin Baumgartner is the CEO and cofounder of Family Dinner, a farmers&rsquo; market delivery business based in Boston, Massachusetts. Launched in 2017, Family Dinner works with local farmers and food purveyors weekly to find New England&#39;s best ingredients and deliver them to homes in the Greater Boston Area. They use data and predictive analytics to curate bountiful deliveries to their customers, reduce waste in the food supply chain and help small farmers be competitive at a larger scale.</p><p>Erin and the Family Dinner team are reimagining America&rsquo;s food system as a distributed network of small farms; prioritizing taste, quality, and food industry workers above growth, scale and corporate profit. Their mission is to build communities that celebrate great food and the people who grow it -- small farmers, purveyors and food industry workers.<br />&nbsp;<br />Prior to Family Dinner, Erin spent 11 years at MIT, most recently as the Assistant Director of MIT&rsquo;s Senseable City Lab where she incubated her passion for food, education, data and technology. The Lab uses a fusion of data science and design to understand the complex problems of cities around the world to make them greener, smarter and more equitable.&nbsp;<br />&nbsp;&nbsp;<br />Erin lives in Massachusetts with her husband and Co-Founder Tim, and their toothless dog, Frank.</p>",
+                }, ],
+                url: "https://www.ted.com/talks/erin_baumgartner_big_data_small_farms_and_a_tale_of_two_tomatoes",
+                viewed_count: 1471425,
+                talks: [{
+                    recommendations: {
+                        status: "approved",
+                        headline: "Erin Baumgartner recommends",
+                        blurb: "More resources curated by Erin Baumgartner",
+                        start_at: null,
+                        end_at: null,
+                        published: true,
+                        eyebrow: "",
+                        type: "recommendation",
+                        rec_lists: [{
+                            title: "",
+                            description: "",
+                            rec_items: [{
+                                label: "READ_Book",
+                                headline: "*Tomatoland: How Modern Industrial Agriculture Destroyed Our Most Alluring Fruit*",
+                                blurb: "",
+                                note: "Barry Estabrook\r\nAndrews McMeel Publishing, 2012",
+                                link_url: "https://www.amazon.com/Tomatoland-Industrial-Agriculture-Destroyed-Alluring/dp/1449423450/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0520271440&linkCode=as2&tag=teco06-20",
+                                position: null,
+                                is_pdf: false,
+                                eyebrow: "",
+                            }, {
+                                label: "READ_Book",
+                                headline: "*Stuffed and Starved: The Hidden Battle for the World Food System*",
+                                blurb: "",
+                                note: "Raj Patel\r\nMelville House, 2012",
+                                link_url: "https://www.amazon.com/Stuffed-Starved-Hidden-Revised-Updated/dp/1612191274/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0520271440&linkCode=as2&tag=teco06-20",
+                                position: null,
+                                is_pdf: false,
+                                eyebrow: "",
+                            }, {
+                                label: "READ_Book",
+                                headline: "*Eating Animals*",
+                                blurb: "",
+                                note: "Jonathan Safran Foer\r\nBack Bay Books, 2010",
+                                link_url: "https://www.amazon.com/Eating-Animals-Jonathan-Safran-Foer/dp/0316069884/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0520271440&linkCode=as2&tag=teco06-20",
+                                position: null,
+                                is_pdf: false,
+                                eyebrow: "",
+                            }, {
+                                label: "READ_Article",
+                                headline: '"Spoiled Milk, Rotten Vegetables and a Very Broken Food System"',
+                                blurb: "",
+                                note: "Jennifer Clapp\r\n*New York Times*, 2020",
+                                link_url: "https://www.nytimes.com/2020/05/08/opinion/coronavirus-global-food-supply.html",
+                                position: null,
+                                is_pdf: false,
+                                eyebrow: "",
+                            }, ],
+                        }, ],
+                    },
+                    more_resources: [],
+                    corrections: [],
+                    has_citations: true,
+                    take_action: [],
+                    explore_cta_experiment: {},
+                    curator_approved: true,
+                    description: "The path to better food is paved with data, says entrepreneur Erin Baumgartner. Drawing from her experience running a farm-to-table business, she outlines her plan to help create a healthier, zero-waste food system that values the quality and taste of small, local farm harvests over factory-farmed produce.",
+                    downloads: {
+                        id: 64443,
+                        languages: [{
+                            languageName: "English",
+                            endonym: "English",
+                            languageCode: "en",
+                            ianaCode: "en",
+                            isRtl: false
+                        }, {
+                            languageName: "Spanish",
+                            endonym: "Español",
+                            languageCode: "es",
+                            ianaCode: "es",
+                            isRtl: false
+                        }, {
+                            languageName: "Persian",
+                            endonym: "فارسى",
+                            languageCode: "fa",
+                            ianaCode: "fa",
+                            isRtl: true
+                        }, {
+                            languageName: "Portuguese",
+                            endonym: "Português de Portugal",
+                            languageCode: "pt",
+                            ianaCode: "pt",
+                            isRtl: false
+                        }, {
+                            languageName: "Chinese, Traditional",
+                            endonym: "中文 (繁體)",
+                            languageCode: "zh-tw",
+                            ianaCode: "zh-Hant",
+                            isRtl: false
+                        }, {
+                            languageName: "Chinese, Simplified",
+                            endonym: "中文 (简体)",
+                            languageCode: "zh-cn",
+                            ianaCode: "zh-Hans",
+                            isRtl: false
+                        }, {
+                            languageName: "Portuguese, Brazilian",
+                            endonym: "Português brasileiro",
+                            languageCode: "pt-br",
+                            ianaCode: "pt-BR",
+                            isRtl: false
+                        }, {
+                            languageName: "Italian",
+                            endonym: "Italiano",
+                            languageCode: "it",
+                            ianaCode: "it",
+                            isRtl: false
+                        }, {
+                            languageName: "Catalan",
+                            endonym: "Català",
+                            languageCode: "ca",
+                            ianaCode: "ca",
+                            isRtl: false
+                        }, {
+                            languageName: "Arabic",
+                            endonym: "العربية",
+                            languageCode: "ar",
+                            ianaCode: "ar",
+                            isRtl: true
+                        }, {
+                            languageName: "French",
+                            endonym: "Français",
+                            languageCode: "fr",
+                            ianaCode: "fr",
+                            isRtl: false
+                        }, {
+                            languageName: "Japanese",
+                            endonym: "日本語",
+                            languageCode: "ja",
+                            ianaCode: "ja",
+                            isRtl: false
+                        }, {
+                            languageName: "Hindi",
+                            endonym: "हिन्दी",
+                            languageCode: "hi",
+                            ianaCode: "hi",
+                            isRtl: false
+                        }, {
+                            languageName: "Korean",
+                            endonym: "한국어",
+                            languageCode: "ko",
+                            ianaCode: "ko",
+                            isRtl: false
+                        }, ],
+                        nativeDownloads: {
+                            low: "https://download.ted.com/talks/ErinBaumgartner_2019X-light.mp4?apikey=acme-roadrunner",
+                            medium: "https://download.ted.com/talks/ErinBaumgartner_2019X.mp4?apikey=acme-roadrunner",
+                            high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p.mp4?apikey=acme-roadrunner",
+                        },
+                        subtitledDownloads: {
+                            en: {
+                                name: "English",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-en.mp4?apikey=acme-roadrunner",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-en.mp4?apikey=acme-roadrunner",
+                            },
+                            es: {
+                                name: "Spanish",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-es.mp4?apikey=acme-roadrunner",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-es.mp4?apikey=acme-roadrunner",
+                            },
+                            fa: {
+                                name: "Persian",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-fa.mp4?apikey=acme-roadrunner",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-fa.mp4?apikey=acme-roadrunner",
+                            },
+                            pt: {
+                                name: "Portuguese",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-pt.mp4?apikey=acme-roadrunner",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-pt.mp4?apikey=acme-roadrunner",
+                            },
+                            "zh-cn": {
+                                name: "Chinese, Simplified",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-zh-cn.mp4?apikey=acme-roadrunner",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-zh-cn.mp4?apikey=acme-roadrunner",
+                            },
+                            "zh-tw": {
+                                name: "Chinese, Traditional",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-zh-tw.mp4?apikey=acme-roadrunner",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-zh-tw.mp4?apikey=acme-roadrunner",
+                            },
+                            "pt-br": {
+                                name: "Portuguese, Brazilian",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-pt-br.mp4?apikey=acme-roadrunner",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-pt-br.mp4?apikey=acme-roadrunner",
+                            },
+                            it: {
+                                name: "Italian",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-it.mp4?apikey=acme-roadrunner",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-it.mp4?apikey=acme-roadrunner",
+                            },
+                            ca: {
+                                name: "Catalan",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-ca.mp4?apikey=acme-roadrunner",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-ca.mp4?apikey=acme-roadrunner",
+                            },
+                            ar: {
+                                name: "Arabic",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-ar.mp4?apikey=acme-roadrunner",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-ar.mp4?apikey=acme-roadrunner",
+                            },
+                            fr: {
+                                name: "French",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-fr.mp4?apikey=acme-roadrunner",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-fr.mp4?apikey=acme-roadrunner",
+                            },
+                            ja: {
+                                name: "Japanese",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-ja.mp4?apikey=acme-roadrunner",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-ja.mp4?apikey=acme-roadrunner",
+                            },
+                            hi: {
+                                name: "Hindi",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-hi.mp4?apikey=acme-roadrunner",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-hi.mp4?apikey=acme-roadrunner",
+                            },
+                            ko: {
+                                name: "Korean",
+                                low: "https://download.ted.com/talks/ErinBaumgartner_2019X-low-ko.mp4?apikey=acme-roadrunner",
+                                high: "https://download.ted.com/talks/ErinBaumgartner_2019X-480p-ko.mp4?apikey=acme-roadrunner",
+                            },
+                        },
+                        audioDownload: "https://download.ted.com/talks/ErinBaumgartner_2019X.mp3?apikey=acme-roadrunner",
+                    },
+                    duration: 921,
+                    event: "TEDxNatick",
+                    institute_partner_name: null,
+                    salon_partner_name: null,
+                    event_badge: null,
+                    is_featured: true,
+                    hero: "https://s3.amazonaws.com/talkstar-photos/uploads/c6b8d3f8-939f-4235-bfd7-5fff614c10f3/ErinBaumgartner_2019X-embed.jpg",
+                    hero_load: "https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/c6b8d3f8-939f-4235-bfd7-5fff614c10f3/ErinBaumgartner_2019X-embed.jpg?q=50&w=15",
+                    id: "64443",
+                    player_talks: [{
+                        id: "64443",
+                        mediaIdentifier: "ErinBaumgartner_2019X",
+                        mediaProjectVersionIdentifier: null,
+                        duration: 921,
+                        languages: [{
+                            languageName: "English",
+                            endonym: "English",
+                            languageCode: "en",
+                            ianaCode: "en",
+                            isRtl: false
+                        }, {
+                            languageName: "Spanish",
+                            endonym: "Español",
+                            languageCode: "es",
+                            ianaCode: "es",
+                            isRtl: false
+                        }, {
+                            languageName: "Persian",
+                            endonym: "فارسى",
+                            languageCode: "fa",
+                            ianaCode: "fa",
+                            isRtl: true
+                        }, {
+                            languageName: "Portuguese",
+                            endonym: "Português de Portugal",
+                            languageCode: "pt",
+                            ianaCode: "pt",
+                            isRtl: false
+                        }, {
+                            languageName: "Chinese, Traditional",
+                            endonym: "中文 (繁體)",
+                            languageCode: "zh-tw",
+                            ianaCode: "zh-Hant",
+                            isRtl: false
+                        }, {
+                            languageName: "Chinese, Simplified",
+                            endonym: "中文 (简体)",
+                            languageCode: "zh-cn",
+                            ianaCode: "zh-Hans",
+                            isRtl: false
+                        }, {
+                            languageName: "Portuguese, Brazilian",
+                            endonym: "Português brasileiro",
+                            languageCode: "pt-br",
+                            ianaCode: "pt-BR",
+                            isRtl: false
+                        }, {
+                            languageName: "Italian",
+                            endonym: "Italiano",
+                            languageCode: "it",
+                            ianaCode: "it",
+                            isRtl: false
+                        }, {
+                            languageName: "Catalan",
+                            endonym: "Català",
+                            languageCode: "ca",
+                            ianaCode: "ca",
+                            isRtl: false
+                        }, {
+                            languageName: "Arabic",
+                            endonym: "العربية",
+                            languageCode: "ar",
+                            ianaCode: "ar",
+                            isRtl: true
+                        }, {
+                            languageName: "French",
+                            endonym: "Français",
+                            languageCode: "fr",
+                            ianaCode: "fr",
+                            isRtl: false
+                        }, {
+                            languageName: "Japanese",
+                            endonym: "日本語",
+                            languageCode: "ja",
+                            ianaCode: "ja",
+                            isRtl: false
+                        }, {
+                            languageName: "Hindi",
+                            endonym: "हिन्दी",
+                            languageCode: "hi",
+                            ianaCode: "hi",
+                            isRtl: false
+                        }, {
+                            languageName: "Korean",
+                            endonym: "한국어",
+                            languageCode: "ko",
+                            ianaCode: "ko",
+                            isRtl: false
+                        }, ],
+                        nativeLanguage: "en",
+                        isSubtitleRequired: false,
+                        introDuration: 11.82,
+                        adDuration: 3.33,
+                        postAdDuration: 0.83,
+                        resources: {
+                            h264: [{
+                                bitrate: 180,
+                                file: "https://pc.tedcdn.com/talk/stream/2019X/Blank/ErinBaumgartner_2019X-180k.mp4?dnt"
+                            }],
+                            hls: {
+                                adUrl: "https://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250%2C512x288%2C120x60%2C320x50%2C6x7%2C6x8&correlator=%5Bcorrelator%5D&cust_params=event%3DTEDxNatick%26id%3D64443%26tag%3Dfood%2Cfarming%2Cagriculture%2Cdata%2Csustainability%2CTEDx%2Ccommunity%26talk%3Derin_baumgartner_big_data_small_farms_and_a_tale_of_two_tomatoes%26year%3D2019&env=vp&gdfp_req=1&impl=s&iu=%2F5641%2Fmobile%2Fios%2Fweb&output=xml_vast2&sz=640x360&unviewed_position_start=1&url=%5Breferrer%5D",
+                                maiTargeting: {
+                                    id: "64443",
+                                    talk: "erin_baumgartner_big_data_small_farms_and_a_tale_of_two_tomatoes",
+                                    tag: "food,farming,agriculture,data,sustainability,TEDx,community",
+                                    year: "2019",
+                                    event: "TEDxNatick",
+                                },
+                                stream: "https://hls.ted.com/talks/64443.m3u8?preroll=newshortintro_053119",
+                                metadata: "https://hls.ted.com/talks/64443.json?preroll=newshortintro_053119",
+                            },
+                        },
+                        targeting: {
+                            id: "64443",
+                            talk: "erin_baumgartner_big_data_small_farms_and_a_tale_of_two_tomatoes",
+                            tag: "food,farming,agriculture,data,sustainability,TEDx,community",
+                            year: "2019",
+                            event: "TEDxNatick"
+                        },
+                        canonical: "https://www.ted.com/talks/erin_baumgartner_big_data_small_farms_and_a_tale_of_two_tomatoes",
+                        name: "Erin Baumgartner: Big data, small farms and a tale of two tomatoes",
+                        title: "Big data, small farms and a tale of two tomatoes",
+                        speaker: "Erin Baumgartner",
+                        thumb: "https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/c6b8d3f8-939f-4235-bfd7-5fff614c10f3/ErinBaumgartner_2019X-embed.jpg?quality=89&w=600",
+                        slug: "erin_baumgartner_big_data_small_farms_and_a_tale_of_two_tomatoes",
+                        event: "TEDxNatick",
+                        published: 1597937141,
+                        external: {
+                            service: "YouTube",
+                            code: "O4F40SsEFyY",
+                            duration: 0.0,
+                            start_time: 0.0
+                        },
+                    }, ],
+                    recorded_at: "2019-01-26T00:00:00.000+00:00",
+                    related_talks: [{
+                        id: "46536",
+                        hero: "https://s3.amazonaws.com/talkstar-photos/uploads/6ba45811-1d66-4cfc-a8e7-a26062e8a03d/MohammadModarres_2019S-embed.jpg",
+                        speaker: "Mohammad Modarres",
+                        title: "Why you should shop at your local farmers market",
+                        duration: 365,
+                        slug: "mohammad_modarres_why_you_should_shop_at_your_local_farmers_market",
+                        viewed_count: 1846976,
+                    }, {
+                        id: "2898",
+                        hero: "https://s3.amazonaws.com/talkstar-photos/uploads/44c111da-e378-419c-b25c-2c15cd36a32c/SarahMenker_2017G-embed.jpg",
+                        speaker: "Sara Menker",
+                        title: "A global food crisis may be less than a decade away",
+                        duration: 1073,
+                        slug: "sara_menker_a_global_food_crisis_may_be_less_than_a_decade_away",
+                        viewed_count: 1714970,
+                    }, {
+                        id: "52465",
+                        hero: "https://s3.amazonaws.com/talkstar-photos/uploads/60491611-1ae4-4bb9-9c59-e92d72f35573/MarkusMutz_2019S-embed.jpg",
+                        speaker: "Markus Mutz",
+                        title: "How supply chain transparency can help the planet",
+                        duration: 809,
+                        slug: "markus_mutz_how_supply_chain_transparency_can_help_the_planet",
+                        viewed_count: 1899843,
+                    }, {
+                        id: "55993",
+                        hero: "https://s3.amazonaws.com/talkstar-photos/uploads/db109001-bed2-4402-8ef2-19ebcb54afc2/StuartOda_2019S-embed.jpg",
+                        speaker: "Stuart Oda",
+                        title: "Are indoor vertical farms the future of agriculture?",
+                        duration: 597,
+                        slug: "stuart_oda_are_indoor_vertical_farms_the_future_of_agriculture",
+                        viewed_count: 2332529,
+                    }, {
+                        id: "67741",
+                        hero: "https://s3.amazonaws.com/talkstar-photos/uploads/ae81b325-51d6-49c3-adfd-1c245b2aa0d3/AmandaLittle_2020S-embed.jpg",
+                        speaker: "Amanda Little",
+                        title: "Climate change is becoming a problem you can taste",
+                        duration: 736,
+                        slug: "amanda_little_climate_change_is_becoming_a_problem_you_can_taste",
+                        viewed_count: 1119863,
+                    }, {
+                        id: "910",
+                        hero: "https://pe.tedcdn.com/images/ted/181989_800x600.jpg",
+                        speaker: "Ellen  Gustafson",
+                        title: "Obesity + hunger = 1 global food issue",
+                        duration: 675,
+                        slug: "ellen_gustafson_obesity_hunger_1_global_food_issue",
+                        viewed_count: 803887,
+                    }, ],
+                    slug: "erin_baumgartner_big_data_small_farms_and_a_tale_of_two_tomatoes",
+                    speakers: [{
+                        id: "6064",
+                        slug: "erin_baumgartner",
+                        is_published: true,
+                        firstname: "Erin",
+                        lastname: "Baumgartner",
+                        middleinitial: "",
+                        title: "",
+                        description: "Entrepreneur",
+                        photo_url: "https://pe.tedcdn.com/images/ted/3113a01c69d2c59780b2262be4739527dadcc7c6_254x191.jpg",
+                        whatotherssay: "",
+                        whotheyare: "Erin Baumgartner thinks about ways to use technology to shorten and simplify the complex system of the food supply chain.",
+                        whylisten: "<p>Erin Baumgartner is the CEO and cofounder of Family Dinner, a farmers&rsquo; market delivery business based in Boston, Massachusetts. Launched in 2017, Family Dinner works with local farmers and food purveyors weekly to find New England&#39;s best ingredients and deliver them to homes in the Greater Boston Area. They use data and predictive analytics to curate bountiful deliveries to their customers, reduce waste in the food supply chain and help small farmers be competitive at a larger scale.</p><p>Erin and the Family Dinner team are reimagining America&rsquo;s food system as a distributed network of small farms; prioritizing taste, quality, and food industry workers above growth, scale and corporate profit. Their mission is to build communities that celebrate great food and the people who grow it -- small farmers, purveyors and food industry workers.<br />&nbsp;<br />Prior to Family Dinner, Erin spent 11 years at MIT, most recently as the Assistant Director of MIT&rsquo;s Senseable City Lab where she incubated her passion for food, education, data and technology. The Lab uses a fusion of data science and design to understand the complex problems of cities around the world to make them greener, smarter and more equitable.&nbsp;<br />&nbsp;&nbsp;<br />Erin lives in Massachusetts with her husband and Co-Founder Tim, and their toothless dog, Frank.</p>",
+                    }, ],
+                    speaker_name: "Erin Baumgartner",
+                    tags: ["food", "farming", "agriculture", "data", "sustainability", "TEDx", "community"],
+                    title: "Big data, small farms and a tale of two tomatoes",
+                    video_type: {
+                        id: "2",
+                        name: "TEDx Talk"
+                    },
+                    viewed_count: 1471425,
+                }, ],
+            },
+        });
+    </script>
+</div>
