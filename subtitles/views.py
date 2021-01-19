@@ -3,16 +3,16 @@ from django.shortcuts import render
 from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework import status
+from rest_framework.decorators import api_view
 
 from subtitles.models import Subtitle
 from subtitles.serializers import SubtitleSerializer
-from rest_framework.decorators import api_view
 
 # Create your views here.
 
 @api_view(['GET','POST', 'DELETE'])
 def subtitles_list(request):
-    # GET list of subtitles, POST a new subtitle, DELETE a subtitle
+    # GET list of subtitles, POST a new subtitle, DELETE all subtitles
 
     if request.method == 'GET':
         subtitles = Subtitle.objects.all()
@@ -25,7 +25,6 @@ def subtitles_list(request):
         subtitle_serializer = SubtitleSerializer(data=subtitle_data)
         if subtitle_serializer.is_valid():
             subtitle_serializer.save()
-            print(subtitle_serializer.data)
             return JsonResponse(subtitle_serializer.data, status=status.HTTP_201_CREATED)
         return JsonResponse(subtitle_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
@@ -35,10 +34,10 @@ def subtitles_list(request):
 
 
 @api_view(['GET', 'PUT', 'DELETE'])
-def subtitles_detail(request, pk):
-    # find subtitle by pk (id)
+def subtitles_detail(request, id):
+    # find subtitle by id (id)
     try: 
-        subtitle = Subtitle.objects.get(pk=pk) 
+        subtitle = Subtitle.objects.get(pk=id) 
     except Subtitle.DoesNotExist: 
         return JsonResponse({'message': 'The subtitle does not exist'}, status=status.HTTP_404_NOT_FOUND) 
         
