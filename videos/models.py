@@ -9,3 +9,4 @@ class Video(models.Model):
     licenseUrl = models.CharField(max_length=500, blank=False, default=''),
     title = models.CharField(max_length=500, blank=False, default=''),
     description = models.CharField(max_length=2500, blank=False, default=''),
+    
