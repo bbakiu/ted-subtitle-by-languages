@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'subtitles.apps.SubtitlesConfig',
     'videos.apps.VideosConfig',
+    'video_crawler_by_language.apps.VideoCrawlerByLanguageConfig',
     'corsheaders',
 ]
 

@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^', include('subtitles.urls')),
     url(r'^', include('videos.urls')),
+    url(r'^', include('video_crawler_by_language.urls')),
 ]

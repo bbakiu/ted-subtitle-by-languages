@@ -1,4 +1,5 @@
 # django
 # django-rest-framework
 # psycopg2
-# 
+# coreapi
+# beautifulsoup4
