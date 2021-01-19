@@ -8,4 +8,4 @@ class SubtitleSerializer(serializers.ModelSerializer):
         fields = ('id',
                 'videoId',
                 'language',
-                'contentJson')
+                'contentJson',)

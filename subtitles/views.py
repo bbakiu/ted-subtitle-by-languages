@@ -25,6 +25,7 @@ def subtitles_list(request):
         subtitle_serializer = SubtitleSerializer(data=subtitle_data)
         if subtitle_serializer.is_valid():
             subtitle_serializer.save()
+            print(subtitle_serializer.data)
             return JsonResponse(subtitle_serializer.data, status=status.HTTP_201_CREATED)
         return JsonResponse(subtitle_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
