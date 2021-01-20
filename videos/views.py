@@ -37,10 +37,10 @@ def videos_list(request):
         return JsonResponse({'message': '{} Videos were deleted successfully'.format(count[0])}, status=status.HTTP_204_NO_CONTENT)
 
 @api_view(['GET', 'PUT', 'DELETE'])
-def videos_detail(request, id):
+def videos_detail(request, video_id):
     #find a video by id
     try:
-        video = Video.objects.get(pk=id)
+        video = Video.objects.get(pk=video_id)
     except Video.DoesNotExist:
         return JsonResponse({'message': 'The video does not exist'}, status=status.HTTP_404_NOT_FOUND)
     # GET a videos, DELETE a videos, PUT a video
@@ -82,9 +82,11 @@ def video_detail_by_url(request):
 
     jsonSubstring = script_unprocessed[openIndex:closeIndex + 1]
     talk_meta = json.loads(jsonSubstring)["__INITIAL_DATA__"]
-    print(json.dumps(talk_meta, indent = 3)) 
 
     video_id = talk_meta["current_talk"]
+
+    
+
     url = talk_meta["url"]
     viewed_count = talk_meta["viewed_count"]
     event = talk_meta["event"]
