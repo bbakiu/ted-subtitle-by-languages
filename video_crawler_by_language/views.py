@@ -15,18 +15,32 @@ from bs4 import BeautifulSoup
 def videos_list(request, lang):
     base_url="https://www.ted.com"
     client = coreapi.Client()
-    schema = client.get('https://www.ted.com/talks?sort=popular&language=sq')
+    schema = client.get('https://www.ted.com/talks?sort=newest&language=sq')
     soup = BeautifulSoup(schema, "html.parser")
-    pages = soup.find_all("a", class_="pagination__item")[-1].get_text()
-    videos = soup.find_all("div", class_="talk-link")
-    print(videos)
-    videosTagList = soup.find_all("a", class_="ga-link", attrs={"data-ga-context" : "talks"})
-    print(videosTagList)
+    nr_pages = soup.find_all("a", class_="pagination__item")[-1].get_text()
+    all_video_links = []
+    for i in range(int(nr_pages)):
+        page_url = 'https://www.ted.com/talks?language=sq&page={}&sort=newest'.format(i+1)
+        schema = client.get(page_url)
+        soup = BeautifulSoup(schema, "html.parser")
+        video_links = get_video_list(soup)
+        all_video_links.extend(video_links)
+        # print(page_url)
+        # print(all_video_links)
+
+    return JsonResponse({'message': 'There are {} pages of videos for the language {}. All video links: {}'.format(nr_pages, lang, all_video_links)}, status=status.HTTP_200_OK)
+
+def get_video_list(page):
+    base_url="https://www.ted.com"
+    videosTagList = page.find_all("a", class_="ga-link", attrs={"data-ga-context" : "talks", "lang":True})
+    print("\n=======\n")
+    print( videosTagList)
+    print("\n=======\n")
     video_links = []
     for videoTag in videosTagList:
-        print("Processing repElem...\n")
         videoHref = videoTag.get("href")
-        video_links.append(base_url + videoHref)
-
-    return JsonResponse({'message': 'There are {} pages of videos for the language {}. This is list of links: {}'.format(pages, lang, video_links)}, status=status.HTTP_200_OK)
+        full_url = base_url + videoHref
+        video_links.append(full_url)
+    
+    return video_links
     
