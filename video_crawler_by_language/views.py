@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 def videos_list(request, lang):
     base_url="https://www.ted.com"
     client = coreapi.Client()
-    schema = client.get('https://www.ted.com/talks?sort=newest&language=sq')
+    schema = client.get('https://www.ted.com/talks?sort=newest&language={}'.format(lang))
     soup = BeautifulSoup(schema, "html.parser")
     nr_pages = soup.find_all("a", class_="pagination__item")[-1].get_text()
     all_video_links = []

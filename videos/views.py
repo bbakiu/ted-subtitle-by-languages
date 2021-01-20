@@ -65,36 +65,37 @@ def video_detail_by_url(request):
     video_link =  JSONParser().parse(request)
     client = coreapi.Client()
     schema = client.get(video_link["url"])
+
     soup = BeautifulSoup(schema, "html.parser")
-    video_meta = soup.find("div", attrs={"itemscope":True, "itemtype":"https://schema.org/VideoObject"})
-    # print("\n=======\n")
-    # print(video_meta)
-    # print("\n=======\n")
-    script = str(soup.find("script", attrs={"data-spec":"q"}))
-    # print("\n=======\n")
-    # print(script)
-    # print("\n=======\n")
-    soup2 = BeautifulSoup(str(video_meta), "html.parser")
-    # print(soup2)
-   
-    duration = soup2.find("meta", attrs={"itemprop":"duration"})["content"]
+    video_meta_unprocessed = soup.find("div", attrs={"itemscope":True, "itemtype":"https://schema.org/VideoObject"})
+    video_meta = BeautifulSoup(str(video_meta_unprocessed), "html.parser")
+
+    duration = video_meta.find("meta", attrs={"itemprop":"duration"})["content"]
+    license_url = video_meta.find("link", attrs={"itemprop":"license"})["href"]
+    title = video_meta.find("meta", attrs={"itemprop":"name"})["content"]
+    description = video_meta.find("meta", attrs={"itemprop":"description"})["content"]
+
+    script_unprocessed = str(soup.find("script", attrs={"data-spec":"q"}))
+    openIndex = script_unprocessed.index('{')
+    closeIndex=script_unprocessed.rindex('}')
+
+    jsonSubstring = script_unprocessed[openIndex:closeIndex + 1]
+    talk_meta = json.loads(jsonSubstring)["__INITIAL_DATA__"]
+
+    video_id = talk_meta["current_talk"]
+    url = talk_meta["url"]
+    speakers = []
+    for speaker in talk_meta["speakers"]:
+        name = construct_name(speaker)
+        speakers.append(name)
     
-    url = video_link["url"]
-    licenseUrl = soup2.find("link", attrs={"itemprop":"license"})["href"]
-    title = soup2.find("meta", attrs={"itemprop":"name"})["content"]
-    description = soup2.find("meta", attrs={"itemprop":"description"})["content"]
-    print(duration, url, licenseUrl, title, description)
-    openIndex = script.index('{')
-    closeIndex=script.rindex('}')
-    print('Found open index {} and close index {}'.format(openIndex, closeIndex))
-    substring = script[openIndex:closeIndex+1]
-    talk_meta = json.loads(substring)["__INITIAL_DATA__"]
-    print('Json content is {} '.format(talk_meta))
-    # videoId=talk_meta["current_talk"]
-    # author=talk_meta.speakers[0]["firstname"]
-    # author = soup2.find("span", attrs={"itemprop":"author"}).children
-    # print(videoId,"\n", author)
-    
+    video = Video(video_id=video_id, duration=duration, url=url, license_url=license_url, title=title, description=description, speakers=speakers)
+    video.save()
+    print(video)
+    video_serializer = VideoSerializer(video)
+    return JsonResponse(video_serializer.data, status=status.HTTP_200_OK)
 
 
-    return JsonResponse(talk_meta, status=status.HTTP_200_OK)
+def construct_name(speaker):
+    return ' '.join(list(filter(None, [speaker["firstname"], speaker["middleinitial"], speaker["lastname"]])))
+
