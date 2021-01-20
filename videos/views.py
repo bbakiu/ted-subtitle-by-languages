@@ -65,8 +65,6 @@ def video_detail_by_url(request):
     video_link =  JSONParser().parse(request)
     client = coreapi.Client()
     normalized_url = query_string_remove(video_link["url"])
-    print(video_link["url"])
-    print (normalized_url)
     schema = client.get(normalized_url)
 
     soup = BeautifulSoup(schema, "html.parser")
@@ -84,17 +82,20 @@ def video_detail_by_url(request):
 
     jsonSubstring = script_unprocessed[openIndex:closeIndex + 1]
     talk_meta = json.loads(jsonSubstring)["__INITIAL_DATA__"]
+    print(json.dumps(talk_meta, indent = 3)) 
 
     video_id = talk_meta["current_talk"]
     url = talk_meta["url"]
+    viewed_count = talk_meta["viewed_count"]
+    event = talk_meta["event"]
     speakers = []
     for speaker in talk_meta["speakers"]:
         name = construct_name(speaker)
         speakers.append(name)
     
-    video = Video(video_id=video_id, duration=duration, url=url, license_url=license_url, title=title, description=description, speakers=speakers)
+    video = Video(video_id=video_id, duration=duration, url=url, license_url=license_url, title=title, description=description, speakers=speakers, event=event, viewed_count=viewed_count)
     video.save()
-    print(video)
+
     video_serializer = VideoSerializer(video)
     return JsonResponse(video_serializer.data, status=status.HTTP_200_OK)
 

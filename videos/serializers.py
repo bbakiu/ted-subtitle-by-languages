@@ -12,4 +12,6 @@ class VideoSerializer(serializers.ModelSerializer):
                 'url',
                 'license_url',
                 'title',
-                'description')
+                'description',
+                'event',
+                'viewed_count',)

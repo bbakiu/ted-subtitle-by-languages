@@ -10,4 +10,6 @@ class Video(models.Model):
     license_url = models.CharField(max_length=500, blank=False, default='')
     title = models.CharField(max_length=500, blank=False, default='')
     description = models.CharField(max_length=2500, blank=False, default='')
+    viewed_count = models.IntegerField(blank=False, default=0)
+    event = models.CharField(max_length=500, blank=False, default='')
     
