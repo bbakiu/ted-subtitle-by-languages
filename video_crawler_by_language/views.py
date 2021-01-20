@@ -25,17 +25,12 @@ def videos_list(request, lang):
         soup = BeautifulSoup(schema, "html.parser")
         video_links = get_video_list(soup)
         all_video_links.extend(video_links)
-        # print(page_url)
-        # print(all_video_links)
 
     return JsonResponse({'message': 'There are {} pages of videos for the language {}. All video links: {}'.format(nr_pages, lang, all_video_links)}, status=status.HTTP_200_OK)
 
 def get_video_list(page):
     base_url="https://www.ted.com"
     videosTagList = page.find_all("a", class_="ga-link", attrs={"data-ga-context" : "talks", "lang":True})
-    print("\n=======\n")
-    print( videosTagList)
-    print("\n=======\n")
     video_links = []
     for videoTag in videosTagList:
         videoHref = videoTag.get("href")

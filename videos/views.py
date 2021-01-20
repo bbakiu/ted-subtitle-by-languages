@@ -7,6 +7,8 @@ from rest_framework.decorators import api_view
 
 from videos.models import Video
 from videos.serializers import VideoSerializer
+import coreapi
+from bs4 import BeautifulSoup
 # Create your views here.
 
 
@@ -56,3 +58,32 @@ def videos_detail(request, id):
     elif request.method == 'DELETE':
         video.delete()
         return JsonResponse({'message': 'Video was deleted sucessfully'}, status=status.HTTP_204_NO_CONTENT)
+
+@api_view(['POST'])
+def video_detail_by_url(request):
+    video_link =  JSONParser().parse(request)
+    client = coreapi.Client()
+    schema = client.get(video_link["url"])
+    soup = BeautifulSoup(schema, "html.parser")
+    video_meta = soup.find("div", attrs={"itemscope":True, "itemtype":"https://schema.org/VideoObject"})
+    # print("\n=======\n")
+    # print(video_meta)
+    # print("\n=======\n")
+    script = soup.find("script", attrs={"data-spec":"q"})
+    # print("\n=======\n")
+    # print(script)
+    print("\n=======\n")
+    soup2 = BeautifulSoup(str(video_meta), "html.parser")
+    print(soup2)
+    # videoId=script current_talk
+    duration = soup2.find("meta", attrs={"itemprop":"duration"})["content"]
+    # author = soup2.find("meta", attrs={"itemprop":"name"})["content"] # nested
+    url = video_link["url"]
+    licenseUrl = soup2.find("link", attrs={"itemprop":"license"})["href"]
+    title = soup2.find("meta", attrs={"itemprop":"name"})["content"]
+    description = soup2.find("meta", attrs={"itemprop":"description"})["content"]
+    print(duration, url, licenseUrl, title, description)
+    
+
+
+    return JsonResponse(video_link, status=status.HTTP_200_OK)
