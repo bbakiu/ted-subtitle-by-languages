@@ -46,7 +46,7 @@ def videos_detail(request, video_id):
 @api_view(['POST'])
 def video_detail_by_url(request):
     # POST or update a video for the url defined in the body of the request
-    
+
     video_link =  JSONParser().parse(request)
     client = coreapi.Client()
     normalized_url = query_string_remove(video_link["url"])
@@ -69,8 +69,6 @@ def video_detail_by_url(request):
     talk_meta = json.loads(jsonSubstring)["__INITIAL_DATA__"]
 
     video_id = talk_meta["current_talk"]
-
-    
 
     url = talk_meta["url"]
     viewed_count = talk_meta["viewed_count"]
