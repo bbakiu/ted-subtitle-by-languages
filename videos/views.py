@@ -27,6 +27,7 @@ def videos_list(request):
         count = Video.objects.all().delete()
         return JsonResponse({'message': '{} Videos were deleted successfully'.format(count[0])}, status=status.HTTP_204_NO_CONTENT)
 
+
 @api_view(['GET', 'DELETE'])
 def videos_detail(request, video_id):
     #find a video by id
@@ -42,6 +43,7 @@ def videos_detail(request, video_id):
     elif request.method == 'DELETE':
         video.delete()
         return JsonResponse({'message': 'Video was deleted sucessfully'}, status=status.HTTP_204_NO_CONTENT)
+
 
 @api_view(['POST'])
 def video_detail_by_url(request):
@@ -84,9 +86,10 @@ def video_detail_by_url(request):
     video_serializer = VideoSerializer(video)
     return JsonResponse(video_serializer.data, status=status.HTTP_200_OK)
 
+
 def query_string_remove(url):
     return  url[:url.find('?')] if url.find('?') > 0 else url
 
+
 def construct_name(speaker):
     return ' '.join(list(filter(None, [speaker["firstname"], speaker["middleinitial"], speaker["lastname"]])))
-
