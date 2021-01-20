@@ -13,9 +13,9 @@ import json
 # Create your views here.
 
 
-@api_view(['GET','POST', 'DELETE'])
+@api_view(['GET', 'DELETE'])
 def videos_list(request):
-    # GET list of videos, DELETE all videos, POST all video
+    # GET list of videos, DELETE all videos
 
     if request.method == 'GET':
         videos = Video.objects.all()
@@ -23,20 +23,11 @@ def videos_list(request):
         videos_serializer = VideoSerializer(videos, many=True)
         return JsonResponse(videos_serializer.data, safe=False)
 
-    elif request.method == 'POST':
-        video_data = JSONParser().parse(request)
-        video_serializer = VideoSerializer(data=video_data)
-
-        if video_serializer.is_valid():
-            video_serializer.save()
-            return JsonResponse(video_serializer.data, status=status.HTTP_201_CREATED)
-        return JsonResponse(video_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
     elif request.method == 'DELETE':
         count = Video.objects.all().delete()
         return JsonResponse({'message': '{} Videos were deleted successfully'.format(count[0])}, status=status.HTTP_204_NO_CONTENT)
 
-@api_view(['GET', 'PUT', 'DELETE'])
+@api_view(['GET', 'DELETE'])
 def videos_detail(request, video_id):
     #find a video by id
     try:
@@ -48,20 +39,14 @@ def videos_detail(request, video_id):
         video_serializer = VideoSerializer(video)
         return JsonResponse(video_serializer.data)
     
-    elif request.method == 'PUT':
-        video_data = JSONParser().parse(request)
-        video_serializer = VideoSerializer(video, data=video_data)
-        if video_serializer.is_valid():
-            video_serializer.save()
-            return JsonResponse(video_serializer.data)
-        return JsonResponse(video_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
     elif request.method == 'DELETE':
         video.delete()
         return JsonResponse({'message': 'Video was deleted sucessfully'}, status=status.HTTP_204_NO_CONTENT)
 
 @api_view(['POST'])
 def video_detail_by_url(request):
+    # POST or update a video for the url defined in the body of the request
+    
     video_link =  JSONParser().parse(request)
     client = coreapi.Client()
     normalized_url = query_string_remove(video_link["url"])
