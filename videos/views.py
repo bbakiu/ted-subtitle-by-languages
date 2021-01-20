@@ -64,7 +64,10 @@ def videos_detail(request, id):
 def video_detail_by_url(request):
     video_link =  JSONParser().parse(request)
     client = coreapi.Client()
-    schema = client.get(video_link["url"])
+    normalized_url = query_string_remove(video_link["url"])
+    print(video_link["url"])
+    print (normalized_url)
+    schema = client.get(normalized_url)
 
     soup = BeautifulSoup(schema, "html.parser")
     video_meta_unprocessed = soup.find("div", attrs={"itemscope":True, "itemtype":"https://schema.org/VideoObject"})
@@ -95,6 +98,8 @@ def video_detail_by_url(request):
     video_serializer = VideoSerializer(video)
     return JsonResponse(video_serializer.data, status=status.HTTP_200_OK)
 
+def query_string_remove(url):
+    return  url[:url.find('?')] if url.find('?') > 0 else url
 
 def construct_name(speaker):
     return ' '.join(list(filter(None, [speaker["firstname"], speaker["middleinitial"], speaker["lastname"]])))
