@@ -12,10 +12,11 @@ from bs4 import BeautifulSoup
 # Create your views here.
 
 @api_view(['GET'])
-def videos_list(request, lang):
+def ted_videos_list(request):
     base_url="https://www.ted.com"
+    language = request.GET.get('language', None)
     client = coreapi.Client()
-    schema = client.get('https://www.ted.com/talks?sort=newest&language={}'.format(lang))
+    schema = client.get('https://www.ted.com/talks?sort=newest&language={}'.format(language))
     soup = BeautifulSoup(schema, "html.parser")
     nr_pages = soup.find_all("a", class_="pagination__item")[-1].get_text()
     all_video_links = []
@@ -26,7 +27,7 @@ def videos_list(request, lang):
         video_links = get_video_list(soup)
         all_video_links.extend(video_links)
 
-    return JsonResponse({'message': 'There are {} pages of videos for the language {}. All video links: {}'.format(nr_pages, lang, all_video_links)}, status=status.HTTP_200_OK)
+    return JsonResponse({'message': 'There are {} pages of videos for the language {}. All video links: {}'.format(nr_pages, language, all_video_links)}, status=status.HTTP_200_OK)
 
 def get_video_list(page):
     base_url="https://www.ted.com"
