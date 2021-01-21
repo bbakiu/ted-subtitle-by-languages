@@ -3,5 +3,5 @@ from subtitles import views
 
 urlpatterns = [
     url(r'^api/subtitles$', views.subtitles_list),
-    url(r'^api/subtitles/(?P<video_id>[0-9]+)$', views.subtitles_detail),
+    url(r'^api/subtitles/videos/(?P<video_id>[0-9]+)$', views.subtitles_detail),
 ]
