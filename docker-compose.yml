@@ -10,5 +10,13 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=subtitles
       - POSTGRES_DB=subtitledb
+  
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
 volumes:
   postgres:
+  redisdata:
