@@ -48,11 +48,19 @@ def subtitles_detail(request, video_id):
         if languages_array is not None:
            
             for language in languages_array:
+                try: 
+                    existingSubtitle = Subtitle.objects.get(video_id=video_id, language=language)
+                    id = existingSubtitle.pk
+                except Subtitle.DoesNotExist:
+                    id = None
+                    print("No subtitle for language {}".format(language))
+
+                print(existingSubtitle)
                 full_url = base_url +  "id/{}/lang/{}".format(video_id, language)
                 response_json = requests.get(full_url)
 
                 subtitles =  json.loads(response_json.text)
-                save_subtitles = Subtitle(video_id=video_id, language=language, content_json=subtitles)
+                save_subtitles = Subtitle(id=id, video_id=video_id, language=language, content_json=subtitles)
                 save_subtitles.save()
 
             return JsonResponse({"message": "Subtitles for languages {} saved".format(languages_str)}, status=status.HTTP_200_OK)
@@ -64,7 +72,7 @@ def subtitles_detail(request, video_id):
     # find subtitles by video_id (and languages if provided) 
 
     if request.method == 'GET':
-        subtitles = Subtitle.objects.filter(video_id=video_id)
+        subtitles = Subtitle.objects.filter(video_id=video_id, language__in=languages_array)
         count = len(subtitles)
         subtitles_serializer = SubtitleSerializer(subtitles, many=True)
         return JsonResponse(subtitles_serializer.data, safe=False)
