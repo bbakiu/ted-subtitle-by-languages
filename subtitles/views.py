@@ -46,7 +46,6 @@ def subtitles_detail(request, video_id):
         base_url = "http://www.ted.com/talks/subtitles/"
         # Get the subtitles for the video specified and the language specified in query params
         if languages_array is not None:
-           
             for language in languages_array:
                 try: 
                     existingSubtitle = Subtitle.objects.get(video_id=video_id, language=language)
@@ -55,7 +54,6 @@ def subtitles_detail(request, video_id):
                     id = None
                     print("No subtitle for language {}".format(language))
 
-                print(existingSubtitle)
                 full_url = base_url +  "id/{}/lang/{}".format(video_id, language)
                 response_json = requests.get(full_url)
 
@@ -72,12 +70,12 @@ def subtitles_detail(request, video_id):
     # find subtitles by video_id (and languages if provided) 
 
     if request.method == 'GET':
-        subtitles = Subtitle.objects.filter(video_id=video_id, language__in=languages_array)
+        subtitles = Subtitle.objects.filter(video_id=video_id)
+        if languages_array is not None: 
+            subtitles = Subtitle.objects.filter(video_id=video_id, language__in=languages_array)
         count = len(subtitles)
         subtitles_serializer = SubtitleSerializer(subtitles, many=True)
         return JsonResponse(subtitles_serializer.data, safe=False)
-    
-    
     
     elif request.method == 'DELETE':
         subtitles.delete()
