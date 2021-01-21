@@ -29,7 +29,6 @@ def subtitles_list(request):
         count = Subtitle.objects.all().delete()
         return JsonResponse({'message':'{} Subtitles were deleted sucessfully'.format(count[0])}, status=status.HTTP_204_NO_CONTENT)
 
-# TODO: languages can be a query param here in form of an array. FIXME
 @api_view(['GET', 'POST', 'DELETE'])
 def subtitles_detail(request, video_id):
     # GET / POST / DELETE subtitle
@@ -37,10 +36,8 @@ def subtitles_detail(request, video_id):
     languages_str = request.GET.get('languages', None)
     if languages_str is not None:
         languages_array = languages_str.replace(","," ").split()
-        print(languages_array)
     else:
         languages_array = None
-        print("No Language")
     
     if request.method == 'POST':
         base_url = "http://www.ted.com/talks/subtitles/"
@@ -52,7 +49,6 @@ def subtitles_detail(request, video_id):
                     id = existingSubtitle.pk
                 except Subtitle.DoesNotExist:
                     id = None
-                    print("No subtitle for language {}".format(language))
 
                 full_url = base_url +  "id/{}/lang/{}".format(video_id, language)
                 response_json = requests.get(full_url)
@@ -68,12 +64,13 @@ def subtitles_detail(request, video_id):
         
       
     # find subtitles by video_id (and languages if provided) 
+    subtitles = Subtitle.objects.filter(video_id=video_id)
+    if languages_array is not None: 
+        subtitles = Subtitle.objects.filter(video_id=video_id, language__in=languages_array)
+    count = len(subtitles)
 
     if request.method == 'GET':
-        subtitles = Subtitle.objects.filter(video_id=video_id)
-        if languages_array is not None: 
-            subtitles = Subtitle.objects.filter(video_id=video_id, language__in=languages_array)
-        count = len(subtitles)
+        
         subtitles_serializer = SubtitleSerializer(subtitles, many=True)
         return JsonResponse(subtitles_serializer.data, safe=False)
     
