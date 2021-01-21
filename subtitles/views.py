@@ -19,43 +19,31 @@ def subtitles_list(request):
 
         subtitle_serializer = SubtitleSerializer(subtitles, many=True)
         return JsonResponse(subtitle_serializer.data, safe=False)
-    
-    elif request.method == 'POST':
-        subtitle_data = JSONParser().parse(request)
-        subtitle_serializer = SubtitleSerializer(data=subtitle_data)
-        if subtitle_serializer.is_valid():
-            subtitle_serializer.save()
-            return JsonResponse(subtitle_serializer.data, status=status.HTTP_201_CREATED)
-        return JsonResponse(subtitle_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
+        
     elif request.method == 'DELETE':
         count = Subtitle.objects.all().delete()
         return JsonResponse({'message':'{} Subtitles were deleted sucessfully'.format(count[0])}, status=status.HTTP_204_NO_CONTENT)
 
-
-@api_view(['GET', 'PUT', 'DELETE'])
-def subtitles_detail(request, id):
+# TODO: languages can be a query param here in form of an array. FIXME
+@api_view(['GET', 'POST', 'DELETE'])
+def subtitles_detail(request, video_id):
     # find subtitle by id (id)
     try: 
-        subtitle = Subtitle.objects.get(pk=id) 
+        subtitles = Subtitle.objects.filter(video_id=video_id) 
     except Subtitle.DoesNotExist: 
-        return JsonResponse({'message': 'The subtitle does not exist'}, status=status.HTTP_404_NOT_FOUND) 
+        return JsonResponse({'message': 'The subtitles does not exist'}, status=status.HTTP_404_NOT_FOUND) 
         
     # GET / PUT / DELETE subtitle
     if request.method == 'GET':
-        subtitle_serializer = SubtitleSerializer(subtitle)
-        return JsonResponse(subtitle_serializer.data)
+        subtitles_serializer = SubtitleSerializer(subtitles)
+        return JsonResponse(subtitles_serializer.data)
     
-    elif request.method == 'PUT':
-        subtitle_data = JSONParser().parse(request)
-        subtitle_serializer = SubtitleSerializer(subtitle, data=subtitle_data)
-        if subtitle_serializer.is_valid():
-            subtitle_serializer.save()
-            return JsonResponse(subtitle_serializer.data)
-        return JsonResponse(subtitle_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    elif request.method == 'POST':
+        # Get the subtitles for the video specified and the language specified in query params
+        pass
     
     elif request.method == 'DELETE':
-        subtitle.delete()
-        return JsonResponse({'message': 'Subtitle was deleted sucessfully'}, status=status.HTTP_204_NO_CONTENT)
+        subtitles.delete()
+        return JsonResponse({'message': 'Subtitles were deleted sucessfully'}, status=status.HTTP_204_NO_CONTENT)
 
         

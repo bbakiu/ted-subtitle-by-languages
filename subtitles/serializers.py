@@ -6,6 +6,6 @@ class SubtitleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Subtitle
         fields = ('id',
-                'videoId',
+                'video_id',
                 'language',
-                'contentJson',)
+                'content_json',)
