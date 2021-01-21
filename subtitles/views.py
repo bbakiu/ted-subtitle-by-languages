@@ -61,16 +61,13 @@ def subtitles_detail(request, video_id):
             return JsonResponse({"message": "Languages are required. Please provide them as query param"}, status=status.HTTP_400_BAD_REQUEST)
         
       
-    # find subtitles by video_id (and languages if provided)
-    try: 
-        subtitles = Subtitle.objects.filter(video_id=video_id)
-        count = len(subtitles) 
-    except Subtitle.DoesNotExist: 
-        return JsonResponse({'message': 'The subtitles does not exist'}, status=status.HTTP_404_NOT_FOUND) 
+    # find subtitles by video_id (and languages if provided) 
 
     if request.method == 'GET':
-        subtitles_serializer = SubtitleSerializer(subtitles)
-        return JsonResponse(subtitles_serializer.data, many=True)
+        subtitles = Subtitle.objects.filter(video_id=video_id)
+        count = len(subtitles)
+        subtitles_serializer = SubtitleSerializer(subtitles, many=True)
+        return JsonResponse(subtitles_serializer.data, safe=False)
     
     
     
