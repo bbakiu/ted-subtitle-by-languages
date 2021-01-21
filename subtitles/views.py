@@ -29,6 +29,7 @@ def subtitles_list(request):
         count = Subtitle.objects.all().delete()
         return JsonResponse({'message':'{} Subtitles were deleted sucessfully'.format(count[0])}, status=status.HTTP_204_NO_CONTENT)
 
+
 @api_view(['GET', 'POST', 'DELETE'])
 def subtitles_detail(request, video_id):
     # GET / POST / DELETE subtitle
@@ -62,7 +63,6 @@ def subtitles_detail(request, video_id):
             #throw error since language is required
             return JsonResponse({"message": "Languages are required. Please provide them as query param"}, status=status.HTTP_400_BAD_REQUEST)
         
-      
     # find subtitles by video_id (and languages if provided) 
     subtitles = Subtitle.objects.filter(video_id=video_id)
     if languages_array is not None: 

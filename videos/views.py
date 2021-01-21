@@ -87,9 +87,9 @@ def video_detail_by_url(request):
     return JsonResponse(video_serializer.data, status=status.HTTP_200_OK)
 
 
-def query_string_remove(url):
-    return  url[:url.find('?')] if url.find('?') > 0 else url
-
-
 def construct_name(speaker):
     return ' '.join(list(filter(None, [speaker["firstname"], speaker["middleinitial"], speaker["lastname"]])))
+
+
+def query_string_remove(url):
+    return  url[:url.find('?')] if url.find('?') > 0 else url

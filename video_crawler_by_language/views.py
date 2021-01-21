@@ -13,30 +13,36 @@ from bs4 import BeautifulSoup
 
 @api_view(['GET'])
 def ted_videos_list(request):
-    base_url="https://www.ted.com"
-    language = request.GET.get('language', None)
+    origin_language = request.GET.get('origin_language', None)
+    target_language = request.GET.get('target_language', None)
     client = coreapi.Client()
-    schema = client.get('https://www.ted.com/talks?sort=newest&language={}'.format(language))
+    schema = client.get('https://www.ted.com/talks?sort=newest&language={}'.format(origin_language))
     soup = BeautifulSoup(schema, "html.parser")
     nr_pages = soup.find_all("a", class_="pagination__item")[-1].get_text()
-    all_video_links = []
+    all_video_details = []
     for i in range(int(nr_pages)):
-        page_url = 'https://www.ted.com/talks?language=sq&page={}&sort=newest'.format(i+1)
+        page_url = 'https://www.ted.com/talks?language=sq&page={}&sort=newest'.format(i + 1)
         schema = client.get(page_url)
         soup = BeautifulSoup(schema, "html.parser")
-        video_links = get_video_list(soup)
-        all_video_links.extend(video_links)
+        video_details = get_video_list(soup, "{},{}".format(origin_language, target_language))
+        all_video_details.extend(video_details)
 
-    return JsonResponse({'message': 'There are {} pages of videos for the language {}. All video links: {}'.format(nr_pages, language, all_video_links)}, status=status.HTTP_200_OK)
+    return JsonResponse(all_video_details, safe=False, status=status.HTTP_200_OK)
 
-def get_video_list(page):
+def get_video_list(page, languages):
     base_url="https://www.ted.com"
-    videosTagList = page.find_all("a", class_="ga-link", attrs={"data-ga-context" : "talks", "lang":True})
-    video_links = []
-    for videoTag in videosTagList:
-        videoHref = videoTag.get("href")
+    videos_tag_list = page.find_all("a", class_="ga-link", attrs={"data-ga-context" : "talks", "lang":True})
+    video_details = []
+    for video_tag in videos_tag_list:
+        videoHref = video_tag.get("href")
         full_url = base_url + videoHref
-        video_links.append(full_url)
+        normalized_url = query_string_remove(full_url)
+        video_detail = {"url": normalized_url, "languages": languages}
+        video_details.append(video_detail)
     
-    return video_links
+    return video_details
+
+def query_string_remove(url):
+    return  url[:url.find('?')] if url.find('?') > 0 else url
+
     
