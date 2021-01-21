@@ -8,6 +8,11 @@ from rest_framework.decorators import api_view
 from subtitles.models import Subtitle
 from subtitles.serializers import SubtitleSerializer
 
+import coreapi
+import requests
+import json
+
+
 # Create your views here.
 
 @api_view(['GET', 'DELETE'])
@@ -31,16 +36,30 @@ def subtitles_detail(request, video_id):
     # indentify languages in the query param
     languages_str = request.GET.get('languages', None)
     if languages_str is not None:
-        arr_languages = languages_str.replace(","," ").split()
-        print(arr_languages)
+        languages_array = languages_str.replace(","," ").split()
+        print(languages_array)
     else:
-        arr_languages = None
+        languages_array = None
         print("No Language")
     
     if request.method == 'POST':
+        base_url = "http://www.ted.com/talks/subtitles/"
         # Get the subtitles for the video specified and the language specified in query params
+        if languages_array is not None:
+           
+            for language in languages_array:
+                full_url = base_url +  "id/{}/lang/{}".format(video_id, language)
+                response_json = requests.get(full_url)
+
+                subtitles =  json.loads(response_json.text)
+                save_subtitles = Subtitle(video_id=video_id, language=language, content_json=subtitles)
+                save_subtitles.save()
+
+            return JsonResponse({"message": "Subtitles for languages {} saved".format(languages_str)}, status=status.HTTP_200_OK)
+        else :
+            #throw error since language is required
+            return JsonResponse({"message": "Languages are required. Please provide them as query param"}, status=status.HTTP_400_BAD_REQUEST)
         
-        return JsonResponse({"message": "This is a test message. {}".format(arr_languages)})
       
     # find subtitles by video_id (and languages if provided)
     try: 
