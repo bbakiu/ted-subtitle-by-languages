@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import json
 
 import django_rq
+from rq import Retry
 
 from subtitles.tasks import save_subtitles
 
@@ -46,7 +47,7 @@ def save_video(url, languages) :
 
     video_serializer = VideoSerializer(video)
 
-    django_rq.enqueue(func=save_subtitles, args= [video_id, languages], result_ttl=5000)
+    django_rq.enqueue(func=save_subtitles, args= [video_id, languages], retry=Retry(max=3, interval=[10, 30, 60]))
     print(video_serializer.data)
 
 

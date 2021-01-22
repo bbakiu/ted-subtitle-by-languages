@@ -51,8 +51,15 @@ def subtitles_detail(request, video_id):
                 except Subtitle.DoesNotExist:
                     id = None
 
+                # print("Requests\n")
                 full_url = base_url +  "id/{}/lang/{}".format(video_id, language)
                 response_json = requests.get(full_url)
+                # print(response_json.text)
+                # print("====================\n")
+                # print("Coreapi\n")
+                # client = coreapi.Client()
+                # schema = client.get(full_url)
+                # print(schema)
 
                 subtitles =  json.loads(response_json.text)
                 save_subtitles = Subtitle(id=id, video_id=video_id, language=language, content_json=subtitles)
