@@ -106,6 +106,20 @@ RQ_QUEUES = {
         'PASSWORD': 'some-password',
         'DEFAULT_TIMEOUT': 360,
     },
+    'videos': {
+        'HOST': 'localhost',
+        'PORT': 6379,
+        'DB': 0,
+        'PASSWORD': 'some-password',
+        'DEFAULT_TIMEOUT': 360,
+    },
+    'subtitles': {
+        'HOST': 'localhost',
+        'PORT': 6379,
+        'DB': 0,
+        'PASSWORD': 'some-password',
+        'DEFAULT_TIMEOUT': 360,
+    }
 }
 
 # RQ_QUEUES = {

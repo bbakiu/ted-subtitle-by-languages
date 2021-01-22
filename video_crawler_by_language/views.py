@@ -45,7 +45,8 @@ def get_video_list(page, languages):
         normalized_url = query_string_remove(full_url)
         video_detail = {"url": normalized_url, "languages": languages}
         video_details.append(video_detail)
-        job = django_rq.enqueue(func=save_video, args=[normalized_url, languages], retry=Retry(max=3, interval=[10, 30, 60]))
+        # queue = django_rq.enqueue('default', autocommit=True, is_async=True, default_timeout=360)
+        django_rq.enqueue(func=save_video, args=[normalized_url, languages], id=1)
 
     return video_details
 

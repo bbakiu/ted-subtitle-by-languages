@@ -2,8 +2,10 @@ from subtitles.models import Subtitle
 import requests
 import json
 from django_rq import job 
+import time
+import random
 
-@job("default")
+@job("subtitles")
 def save_subtitles(video_id, languages) :
     if languages is not None:
         languages_array = languages.replace(","," ").split()
@@ -11,6 +13,8 @@ def save_subtitles(video_id, languages) :
         languages_array = None
 
     base_url = "http://www.ted.com/talks/subtitles/"
+    print("sleeping")
+    time.sleep(random.randint(1,121))
     # Get the subtitles for the video specified and the language specified in query params
     if languages_array is not None:
         for language in languages_array:
@@ -32,7 +36,7 @@ def save_subtitles(video_id, languages) :
         #throw error since language is required
         print("Languages are required. Please provide them as query param")
 
-@job("default")
+@job("subtitles")
 def generate_files():
     assets_dir = "assets/"
     if assets_dir is None:

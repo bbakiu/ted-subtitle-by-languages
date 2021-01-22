@@ -9,6 +9,8 @@ import django_rq
 from rq import Retry
 
 from subtitles.tasks import save_subtitles
+import random
+import time
 
 @job("default")
 def save_video(url, languages) :
@@ -46,8 +48,10 @@ def save_video(url, languages) :
     video.save()
 
     video_serializer = VideoSerializer(video)
+   
+    queue = django_rq.get_queue('subtitles')
+    queue.enqueue(f=save_subtitles, args= [video_id, languages], retry=Retry(max=3, interval=[10, 30, 60]))
 
-    django_rq.enqueue(func=save_subtitles, args= [video_id, languages], retry=Retry(max=3, interval=[10, 30, 60]))
     print(video_serializer.data)
 
 
