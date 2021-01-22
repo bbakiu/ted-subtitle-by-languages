@@ -23,7 +23,7 @@ def save_subtitles(video_id, languages) :
             full_url = base_url +  "id/{}/lang/{}".format(video_id, language)
             response_json = requests.get(full_url)
 
-            subtitles =  json.loads(response_json.text)
+            subtitles =  json.loads(response_json.text)["captions"]
             save_subtitles = Subtitle(id=id, video_id=video_id, language=language, content_json=subtitles)
             save_subtitles.save()
 

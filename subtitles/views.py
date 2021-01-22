@@ -61,7 +61,7 @@ def subtitles_detail(request, video_id):
                 # schema = client.get(full_url)
                 # print(schema)
 
-                subtitles =  json.loads(response_json.text)
+                subtitles = json.loads(response_json.text)["captions"]
                 save_subtitles = Subtitle(id=id, video_id=video_id, language=language, content_json=subtitles)
                 save_subtitles.save()
 
