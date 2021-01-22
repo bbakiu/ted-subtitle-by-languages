@@ -31,3 +31,18 @@ def save_subtitles(video_id, languages) :
     else :
         #throw error since language is required
         print("Languages are required. Please provide them as query param")
+
+@job("default")
+def generate_files():
+    assets_dir = "assets/"
+    if assets_dir is None:
+        raise ValueError("Assets directory does not exist")
+    
+    subtitles = Subtitle.objects.all()
+    
+    for subtitle in subtitles:
+        filename = "{}VideoID-{}-{}.json".format(assets_dir, subtitle.video_id, subtitle.language)
+        with open(filename, 'w') as file_object:
+            file_object.write(json.dumps(subtitle.content_json))
+            
+    print("Files are written") 

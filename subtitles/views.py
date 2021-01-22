@@ -85,4 +85,19 @@ def subtitles_detail(request, video_id):
         subtitles.delete()
         return JsonResponse({'message': ' {} Subtitles were deleted sucessfully'.format(count)}, status=status.HTTP_204_NO_CONTENT)
 
+
+@api_view(['POST'])
+def generate_files(request):
+    if request.method == 'POST':
+        assets_dir = "assets/"
+        if assets_dir is None:
+            raise ValueError("Assets directory does not exist")
         
+        subtitles = Subtitle.objects.all()
+        
+        for subtitle in subtitles:
+            filename = "{}VideoID-{}-{}.json".format(assets_dir, subtitle.video_id, subtitle.language)
+            with open(filename, 'w') as file_object:
+                file_object.write(json.dumps(subtitle.content_json))
+                
+        return JsonResponse({"message": "Files are written"}, status=status.HTTP_200_OK)      
