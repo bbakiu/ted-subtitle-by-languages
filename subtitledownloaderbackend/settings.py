@@ -41,8 +41,10 @@ INSTALLED_APPS = [
     'subtitles.apps.SubtitlesConfig',
     'videos.apps.VideosConfig',
     'video_crawler_by_language.apps.VideoCrawlerByLanguageConfig',
+    'aws_s3_upload',
     'corsheaders',
     'django_rq',
+    'storages',
 ]
 
 MIDDLEWARE = [

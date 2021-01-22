@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^', include('subtitles.urls')),
     url(r'^', include('videos.urls')),
     url(r'^', include('video_crawler_by_language.urls')),
+    url(r'^', include('aws_s3_upload.urls')),
     path('django-rq/', include('django_rq.urls')) # not sure why
 ]
