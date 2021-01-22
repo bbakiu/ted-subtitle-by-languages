@@ -5,3 +5,4 @@
 # beautifulsoup4
 # redis 
 # rq
+# django-rq

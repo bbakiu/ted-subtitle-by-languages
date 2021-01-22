@@ -9,6 +9,12 @@ from rest_framework.decorators import api_view
 import coreapi
 from bs4 import BeautifulSoup
 
+import django_rq
+
+from video_crawler_by_language import tasks
+from videos.tasks import save_video
+
+
 # Create your views here.
 
 @api_view(['GET'])
@@ -39,7 +45,8 @@ def get_video_list(page, languages):
         normalized_url = query_string_remove(full_url)
         video_detail = {"url": normalized_url, "languages": languages}
         video_details.append(video_detail)
-    
+        job = django_rq.enqueue(func=save_video, args=[normalized_url, languages], result_ttl=5000)
+
     return video_details
 
 def query_string_remove(url):
