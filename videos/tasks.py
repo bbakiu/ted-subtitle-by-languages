@@ -49,8 +49,7 @@ def save_video(url, languages) :
 
     video_serializer = VideoSerializer(video)
    
-    queue = django_rq.get_queue('subtitles')
-    queue.enqueue(f=save_subtitles, args= [video_id, languages], retry=Retry(max=3, interval=[10, 30, 60]))
+    django_rq.enqueue(func=save_subtitles, args= [video_id, languages], retry=Retry(max=3, interval=[10, 30, 60]))
 
     print(video_serializer.data)
 
