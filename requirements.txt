@@ -1,0 +1,15 @@
+beautifulsoup4==4.9.3
+boto3==1.16.25
+coreapi==2.3.3
+Django==3.1.1
+django-cors-headers==3.5.0
+django-rq==2.4.0
+django-storages==1.11.1
+djangorestframework==3.12.2
+psycopg2==2.8.6
+pylint==2.6.0
+pylint-django==2.4.2
+pylint-plugin-utils==0.6
+redis==3.5.3
+rq==1.7.0
+virtualenv==20.2.1

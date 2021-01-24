@@ -8,4 +8,3 @@
 # django-rq
 # boto3
 # django-storages
-# rq-scheduler
