@@ -94,10 +94,11 @@ def generate_files(request):
             raise ValueError("Assets directory does not exist")
         
         subtitles = Subtitle.objects.all()
+        count = len(subtitles)
         
         for subtitle in subtitles:
             filename = "{}VideoID-{}-{}.json".format(assets_dir, subtitle.video_id, subtitle.language)
             with open(filename, 'w') as file_object:
                 file_object.write(json.dumps(subtitle.content_json))
                 
-        return JsonResponse({"message": "Files are written"}, status=status.HTTP_200_OK)      
+        return JsonResponse({"message": "{} Files are written".format(count)}, status=status.HTTP_200_OK)      
