@@ -89,17 +89,6 @@ WSGI_APPLICATION = 'subtitledownloaderbackend.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
-#         "NAME": os.environ.get("SQL_DATABASE", "db.sqlite3"),
-#         "USER": os.environ.get("SQL_USER", "user"),
-#         "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
-#         "HOST": os.environ.get("db"),
-#         "PORT": os.environ.get("SQL_PORT", "5432"),
-#     }
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -121,35 +110,6 @@ RQ_QUEUES = {
     }
       
 }
-
-# RQ_QUEUES = {
-#     'default': {
-#         'HOST': 'localhost',
-#         'PORT': 6379,
-#         'DB': 0,
-#         'PASSWORD': 'some-password',
-#         'DEFAULT_TIMEOUT': 360,
-#     },
-#     'with-sentinel': {
-#         'SENTINELS': [('localhost', 26736), ('localhost', 26737)],
-#         'MASTER_NAME': 'redismaster',
-#         'DB': 0,
-#         'PASSWORD': 'secret',
-#         'SOCKET_TIMEOUT': None,
-#         'CONNECTION_KWARGS': {
-#             'socket_connect_timeout': 0.3
-#         },
-#     },
-#     'high': {
-#         'URL': os.getenv('REDISTOGO_URL', 'redis://localhost:6379/0'), # If you're on Heroku
-#         'DEFAULT_TIMEOUT': 500,
-#     },
-#     'low': {
-#         'HOST': 'localhost',
-#         'PORT': 6379,
-#         'DB': 0,
-#     }
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
