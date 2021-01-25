@@ -28,6 +28,7 @@ services:
       - staticfiles:/home/app/web/staticfiles
 
   redis:
+    container_name: redisdb
     image: "redis:alpine"
     command: redis-server --requirepass some-password
     ports:
